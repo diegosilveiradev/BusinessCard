@@ -9,6 +9,8 @@
     <string name="label_cor">Cor</string>
     <string name="label_confirmar">Confirmar</string>
     <string name="label_show_sucess">Cartão Criado com Sucesso</string>
+    <string name="label_share">Compartilhar</string>
+    <string name="label_share_to">Compartilhar</string>
     <string-array name="feelings">
     <item name="option_1">#0000CD</item>
     <item name="option_2">#006400</item>

@@ -4,9 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.RecyclerView
 import br.aprendizado.businnescard.App
 import br.aprendizado.businnescard.databinding.ActivityMainBinding
+import br.aprendizado.businnescard.util.Image
 
 class MainActivity : AppCompatActivity() {
     private val binding by lazy {
@@ -36,7 +36,10 @@ class MainActivity : AppCompatActivity() {
 
             val intent = Intent(this, AddBusinnesCardActivity::class.java)
             startActivity(intent)
+        }
+        adapter.listenerShare = { card ->
 
+            Image.share(this,card)
         }
     }
 
